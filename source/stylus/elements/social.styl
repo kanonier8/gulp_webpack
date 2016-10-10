@@ -1,0 +1,60 @@
+social_icon(code)
+	content code
+	display block
+	color ihnert
+	position absolute
+	width 100%
+	left 0
+	bottom 0
+	text-align center
+	font-family 'Social'
+	font-size 1.1rem
+	line-height 32px
+	@media media-pad
+		font-size 1.4rem
+		line-height 44px
+
+.d-social
+	&-list
+		white-space nowrap
+		font-size 0
+		text-align center
+		margin-bottom 10px
+		@media media-pad
+			display inline-block
+		@media media-desktop
+			margin-bottom 20px
+	&__item
+		display inline-block
+		width 32px
+		height 32px
+		border-radius 100%
+		background-color #fff
+		text-align center
+		margin-right 15px
+		position relative
+		cursor pointer
+		color $blue
+		@media media-pad
+			height 44px
+			width 44px
+			margin-right 15px
+		&:last-child
+			margin-right 0
+
+		&_fb
+			&:hover
+				// background-color #395a99
+			&:after
+				social_icon('\e903')
+		&_vk
+			&:hover
+				// background-color #4d75a3
+			&:after
+				social_icon('\e902')
+
+		&_ok
+			&:hover
+				// background-color #f68428
+			&:after
+				social_icon('\e904')
